@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ✨JUEGO✨ </title>
+	<style type="text/css">
+			body{
+		background-image: url(jue.png);
+		background-size: cover;
+	}
+	.cua{
+			position: absolute;
+			top: 70px;
+			left: 70px;
+			width: 80%;
+			height: 80%;
+			background: white;
+			border: black 5px solid;
+
+	}
+	.cuadro{
+		position: absolute;
+		top: 15%;
+		left: 10%;
+		width: 20%;
+		height: 20%;
+		background: #C25EFE ;
+
+	}
+		.atras{
+			position: absolute;
+			font-family: suu;
+			top: 10%;
+			right: 2%;
+			width: 10%;
+			height: 10%;
+			background: salmon;
+			border: black 5px solid;
+			border-radius: 100px;
+		}
+				@font-face{
+	font-family: suu;
+	src: url(su.ttf);
+}
+		.adelante{
+			position: absolute;
+			font-family: suu;
+			top: 30%;
+			right: 2%;
+			width: 10%;
+			height: 10%;
+			background: #95FF90;
+			border: black 5px solid;
+			border-radius: 100px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="atras" id="at"><center> <a href="file:///D:/Documents/4periodod/entrega2p/index.html"> Inicio </center></div></a>
+	<div class="adelante" id="ad"><center><a href="file:///D:/Documents/4periodod/entrega2p/index1.html"> Menu </center></div></a>
+	<div class="cua">
+		<audio class="mus" src="audio.mp3" controls class="mus" id="soni"></audio>
+	</div>
+	<div class="cuadro" id="cuu" onclick="moo()"></div>
+
+	<script type="text/javascript">
+		function moo(){
+			soni.play();
+		var x = Math. floor((Math.random()  * (76-600)) +600);
+		var y = Math. floor((Math.random()  * (71-400)) +400);
+		cuu.style.left=x+"px";
+	    cuu.style.top=y+"px";
+
+	}
+	
+	</script>
+
+</body>
+</html>
